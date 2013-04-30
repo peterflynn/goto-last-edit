@@ -1,0 +1,7 @@
+{
+    "name": "pflynn.goto_last_edit",
+    "title": "Goto Last Edit",
+    "version": "1.0.0",
+    "engines": { "brackets": ">=0.16" },
+    "description": "Jump cursor to location of last edit in the current editor by pressing Ctrl+*"
+}
