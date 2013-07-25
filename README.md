@@ -7,10 +7,10 @@ How to Install
 ==============
 Go to Last Edit is an extension for [Brackets](https://github.com/adobe/brackets/), a new open-source code editor for the web.
 
-To use Go to Last Edit:
+To install extensions:
 
-1. Choose _File > Install Extension_
-2. Enter this URL: _https://github.com/peterflynn/goto-last-edit_
+1. Choose _File > Extension Manager_ and select the _Available_ tab
+2. Search for this extension
 3. Click _Install_!
 
 
