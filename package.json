@@ -3,7 +3,7 @@
     "title": "Goto Last Edit",
     "homepage": "https://github.com/peterflynn/goto-last-edit",
     "author": "Peter Flynn",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": { "brackets": ">=0.16" },
     "description": "Jump cursor to location of last edit in the current file by pressing Ctrl+*"
 }

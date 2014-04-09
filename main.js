@@ -28,8 +28,7 @@ define(function (require, exports, module) {
     "use strict";
     
     // Brackets modules
-    var DocumentManager         = brackets.getModule("document/DocumentManager"),
-        EditorManager           = brackets.getModule("editor/EditorManager"),
+    var EditorManager           = brackets.getModule("editor/EditorManager"),
         Menus                   = brackets.getModule("command/Menus"),
         CommandManager          = brackets.getModule("command/CommandManager");
     
@@ -49,8 +48,14 @@ define(function (require, exports, module) {
     
     /** Remember the location of this most-recent edit */
     function handleDocumentChange(event, document, changeList) {
-        // TODO: handle multipart changeLists
-        currentEditor.__lastEditPos = changeList.from;
+        if (Array.isArray(changeList)) {
+            // cmv4 (Sprint 38+)
+            currentEditor.__lastEditPos = changeList[changeList.length - 1].from;
+        } else {
+            // cmv3 (Sprint 37-)
+            // Note: doesn't handle multipart changelists
+            currentEditor.__lastEditPos = changeList.from;
+        }
     }
     
     /**
